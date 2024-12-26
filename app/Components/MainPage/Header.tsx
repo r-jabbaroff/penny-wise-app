@@ -1,5 +1,6 @@
 "use client";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
+import { PiPiggyBankLight } from "react-icons/pi";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import { useAppContext } from "@/app/AppContext";
@@ -26,7 +27,7 @@ function LogoSection() {
       >
         {/* Icon */}
         <div className="w-[26px] h-[26px] items-center justify-center flex">
-          <SavingsOutlinedIcon
+          <PiPiggyBankLight
             sx={{ fontSize: "25px" }}
             className="text-white"
           />
@@ -48,7 +49,7 @@ function SearchBar() {
   } = useAppContext();
   return (
     <div
-      className={`h-[48px] mt-[3px] bg-slate-50 flex items-center text-sm  
+      className={`h-[48px] mt-[3px] bg-slate-50 flex items-center text-sm
   rounded-md  pl-3 gap-1 w-[300px] max-sm:w-[220px]    `}
     >
       <div>
@@ -73,7 +74,7 @@ function Button() {
   return (
     <button
       onClick={() => setOpenExpenseWindow(true)}
-      className="bg-purple-600 gap-1  p-[13px] flex  text-sm rounded-md text-white items-center 
+      className="bg-purple-600 gap-1  p-[13px] flex  text-sm rounded-md text-white items-center
     justify-center pr-[18px] max-sm:pr-3 hover:bg-purple-700"
     >
       <AddOutlinedIcon sx={{ fontSize: "20px" }} />
