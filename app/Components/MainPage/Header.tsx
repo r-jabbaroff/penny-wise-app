@@ -28,7 +28,7 @@ function LogoSection() {
         {/* Icon */}
         <div className="w-[26px] h-[26px] items-center justify-center flex">
           <PiPiggyBankLight
-            sx={{ fontSize: "25px" }}
+            style={{ fontSize: "25px" }}
             className="text-white"
           />
         </div>
